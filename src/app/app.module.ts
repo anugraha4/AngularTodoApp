@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TodoAddComponent } from './todo-add/todo-add.component';
 import { TodoviewAllComponent } from './todoview-all/todoview-all.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 const myRoute:Routes=[
   {
     path:"",
@@ -28,7 +29,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
